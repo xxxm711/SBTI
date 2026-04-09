@@ -896,7 +896,7 @@ function getVisibleQuestions() {
 function getQuestionMetaLabel(q) {
     if (q.special) return t('questionTagSupplementary');
     const dimensionMeta = getDimensionMetaForLang(app.lang);
-    return app.previewMode ? dimensionMeta[q.dim].name : t('questionTagHidden');
+    return app.previewMode ? dimensionMeta[q.dim].name : '';
 }
 
 function renderQuestions() {
